@@ -1,3 +1,10 @@
 __pycache__/
 .idea/
 my_database.db
+
+# virtualenv
+.venv
+venv/
+ENV/
+flask-mailroom-env
+

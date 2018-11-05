@@ -30,7 +30,7 @@ def create():
             donation = Donation(value=int(request.form['value']), donor=donor)
             donation.save()
 
-            return home()
+            return redirect(url_for('home'))
         except Donor.DoesNotExist:
             return render_template('create.jinja2', error="Donor not found.")
 
